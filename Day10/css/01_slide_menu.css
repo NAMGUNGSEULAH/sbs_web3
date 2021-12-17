@@ -11,7 +11,7 @@ header {
     height: 80px;
     background-color: cornflowerblue;
     position: relative;
-    z-index: 300;
+    /* z-index: 300; */
 }
 
 nav { width: 800px; }
@@ -47,6 +47,7 @@ nav > ul > li a { color: white; }
     cursor: pointer;
     margin-top: 30px;
     position: relative;
+    z-index: 400;
 }
 
 .top, .mid, .bottom {
@@ -76,7 +77,7 @@ nav > ul > li a { color: white; }
 .slide {
     position: fixed;
     /* right: -100%; */
-    left: -100%; 
+    left: -400px; 
     width: 400px;
     height: 100%;
     background-color: violet;
@@ -93,4 +94,16 @@ nav > ul > li a { color: white; }
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
+}
+
+/* 슬라이드 바 X 버튼 */
+.cancel {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/cancel.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
 }
